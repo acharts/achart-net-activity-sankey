@@ -4,224 +4,276 @@
 
 ## Normal usage
 ````html
-<div id="c1" style="height:1600px; width: 1600px;"></div>
+<div id="c1" style="height:2000px; width: 2000px;"></div>
 ````
 
 ````javascript
 seajs.use('index', function(ActivitySankey) {
   var activitySankey = new ActivitySankey.Tree({
     id: 'c1',
-    spanWidth: 100,
+    spanWidth: 150,
     spanHeight: 100,
-    nodeRadius: 10,
+    rectWidth: 20,
+    //drect: 'vertical',
     nodes: [
         {
           id: '1',
+          fill: '#fff',
           quantity: 100
         },
         {
-          id: '2'
+          id: '2',
+          fill: '#fff'
         },
         {
-          id: '3'
+          id: '3',
+          fill: '#f00'
         },
         {
-          id: '4'
+          id: '4',
+          fill: '#fff'
         },
         {
-          id: '5'
+          id: '5',
+          fill: '#fff'
         },
         {
-          id: '6'
+          id: '6',
+          fill: '#fff'
         },
         {
-          id: '7'
+          id: '7',
+          fill: '#fff'
         },
         {
-          id: '8'
+          id: '8',
+          fill: '#f00'
         },
         {
-          id: '9'
+          id: '9',
+          fill: '#fff'
         },
         {
-          id: '10'
+          id: '10',
+          fill: '#f00'
         },
         {
-          id: '11'
+          id: '11',
+          fill: '#fff'
         },
         {
-          id: '12'
+          id: '12',
+          fill: '#fff'
         },
         {
-          id: '13'
+          id: '13',
+          fill: '#fff'
         },
         {
-          id: '14'
+          id: '14',
+          fill: '#fff'
         },
         {
-          id: '15'
+          id: '15',
+          fill: '#fff'
         },
         {
-          id: '16'
+          id: '16',
+          fill: '#f00'
         },
         {
-          id: '17'
+          id: '17',
+          fill: '#fff'
         },
         {
-          id: '18'
+          id: '18',
+          fill: '#fff'
         },
         {
-          id: '19'
+          id: '19',
+          fill: '#fff'
         },
         {
-          id: '20'
+          id: '20',
+          fill: '#fff'
         },
         {
-          id: '21'
+          id: '21',
+          fill: '#f00'
         },
         {
-          id: '22'
+          id: '22',
+          fill: '#fff'
         },
         {
-          id: '23'
+          id: '23',
+          fill: '#fff'
         },
         {
-          id: '24'
+          id: '24',
+          fill: '#fff'
         },
         {
-          id: '25'
+          id: '25',
+          fill: '#fff'
         }
       ],
       edges: [
         {
           source: '1',
           target: '2',
+          color: '#0f0',
           rate: 0.95
         },
         {
           source: '1',
           target: '3',
+          color: '#ff0',
           rate: 0.05
         },
         {
           source: '2',
           target: '4',
-          rate: 0.95
+          color: '#0f0',
+          rate: 1.0
         },
         {
           source: '4',
           target: '5',
-          rate: 0.30
+          color: '#0f0',
+          rate: 0.3
         },
         {
           source: '4',
           target: '6',
-          rate: 0.65
+          color: '#0f0',
+          rate: 0.7
         },
         {
           source: '5',
           target: '7',
-          rate: 0.20
+          color: '#0f0',
+          rate: 0.8
         },
         {
           source: '5',
           target: '8',
-          rate: 0.10
+          color: '#ff0',
+          rate: 0.2
         },
         {
           source: '7',
           target: '9',
-          rate: 0.10
+          color: '#0f0',
+          rate: 0.5
         },
         {
           source: '7',
           target: '10',
-          rate: 0.10
+          color: '#ff0',
+          rate: 0.5
         },
         {
           source: '6',
           target: '11',
-          rate: 0.65
+          color: '#0f0',
+          rate: 1.0
         },
         {
           source: '11',
           target: '12',
-          rate: 0.5
+          color: '#f0f',
+          rate: 0.2
         },
         {
           source: '11',
           target: '13',
-          rate: 0.30
+          color: '#0f0',
+          rate: 0.3
         },
         {
           source: '11',
           target: '14',
-          rate: 0.30
+          color: '#0ff',
+          rate: 0.5
         },
         {
           source: '12',
           target: '15',
-          rate: 0.5
+          color: '#f0f',
+          rate: 1.0
         },
         {
           source: '13',
           target: '15',
-          rate: 0.5
+          color: '#f0f',
+          rate: 0.1
         },
         {
           source: '13',
           target: '25',
-          rate: 0.25
+          color: '#0f0',
+          rate: 0.9
         },
         {
           source: '14',
           target: '24',
-          rate: 0.30
+          color: '#0ff',
+          rate: 1.0
         },
         {
           source: '24',
           target: '22',
-          rate: 0.30
+          color: '#0ff',
+          rate: 1.0
         },
         {
           source: '25',
           target: '23',
-          rate: 0.25
+          color: '#0f0',
+          rate: 1.0
         },
         {
           source: '23',
           target: '20',
-          rate: 0.25
+          color: '#0f0',
+          rate: 1.0
         },
         {
           source: '22',
           target: '20',
-          rate: 0.30
+          color: '#0ff',
+          rate: 1.0
         },
         {
           source: '20',
           target: '18',
-          rate: 0.55
+          color: '#0f0',
+          rate: 1.0
         },
         {
           source: '18',
           target: '21',
+          color: '#ff0',
           rate: 0.15
         },
         {
           source: '18',
           target: '17',
-          rate: 0.40
+          color: '#0f0',
+          rate: 0.85
         },
         {
           source: '17',
           target: '16',
-          rate: 0.25
+          color: '#ff0',
+          rate: 0.4
         },
         {
           source: '17',
           target: '19',
-          rate: 0.15
+          color: '#0f0',
+          rate: 0.6
         }
       ]
     });
