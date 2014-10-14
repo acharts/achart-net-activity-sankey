@@ -11,10 +11,8 @@
 seajs.use('index', function(ActivitySankey) {
   var activitySankey = new ActivitySankey.Tree({
     id: 'c1',
-    spanWidth: 150,
-    spanHeight: 100,
-    rectWidth: 20,
-    //drect: 'vertical',
+    lineOpacity: 0.2,
+    canDrag: true,
     nodes: [
         {
           id: '1',
@@ -24,10 +22,6 @@ seajs.use('index', function(ActivitySankey) {
         {
           id: '2',
           fill: '#fff'
-        },
-        {
-          id: '3',
-          fill: '#f00'
         },
         {
           id: '4',
@@ -116,7 +110,33 @@ seajs.use('index', function(ActivitySankey) {
         {
           id: '25',
           fill: '#fff'
+        },
+        {
+          id: '26',
+          fill: '#fff',
+          quantity: 100
+        },
+        {
+          id: '27',
+          fill: '#fff'
+        },
+        {
+          id: '28',
+          fill: '#fff'
+        },
+        {
+          id: '29',
+          fill: '#fff'
+        },
+        {
+          id: '30',
+          fill: '#fff'
+        },
+        {
+          id: '31',
+          fill: '#fff'
         }
+
       ],
       edges: [
         {
@@ -124,12 +144,6 @@ seajs.use('index', function(ActivitySankey) {
           target: '2',
           color: '#0f0',
           rate: 0.95
-        },
-        {
-          source: '1',
-          target: '3',
-          color: '#ff0',
-          rate: 0.05
         },
         {
           source: '2',
@@ -274,6 +288,48 @@ seajs.use('index', function(ActivitySankey) {
           target: '19',
           color: '#0f0',
           rate: 0.6
+        },
+        {
+          source: '26',
+          target: '27',
+          color: '#0f0',
+          rate: 0.4
+        },
+        {
+          source: '27',
+          target: '28',
+          color: '#0f0',
+          rate: 1.0
+        },
+        {
+          source: '28',
+          target: '29',
+          color: '#0f0',
+          rate: 1.0
+        },
+        {
+          source: '29',
+          target: '11',
+          color: '#0f0',
+          rate: 0.6
+        },
+        {
+          source: '29',
+          target: '30',
+          color: '#0f0',
+          rate: 0.4
+        },
+        {
+          source: '30',
+          target: '20',
+          color: '#0f0',
+          rate: 0.6
+        },
+        {
+          source: '30',
+          target: '31',
+          color: '#0f0',
+          rate: 0.4
         }
       ]
     });
