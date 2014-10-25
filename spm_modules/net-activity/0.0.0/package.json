@@ -1,0 +1,26 @@
+{
+  "name": "net-activity",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:acharts/net-activity.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "licenses": "MIT",
+  "spm": {
+    "main": "index.js",
+    "dependencies": {
+      "achart-util": "1.0.0"
+    },
+    "devDependencies": {
+      "achart-canvas": "1.0.0",
+      "expect.js": "0.3.1"
+    }
+  }
+}
